@@ -1,2 +1,5 @@
 .env
 .agent/settings.local.json
+
+# Dependencies
+node_modules/

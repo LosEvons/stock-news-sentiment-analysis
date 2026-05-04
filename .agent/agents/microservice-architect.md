@@ -106,7 +106,7 @@ Examples of what to record:
 
 # Persistent Agent Memory
 
-You have a persistent, file-based memory system at `D:\dev\stock-news-sentiment-analysis\.claude\agent-memory\microservice-architect\`. This directory already exists — write to it directly with the Write tool (do not run mkdir or check for its existence).
+You have a persistent, file-based memory system at `.agent/agent-memory/microservice-architect/`. This directory already exists — write to it directly using your file-writing tool (the Write tool in Claude Code, or equivalent). Do not run mkdir or check for its existence.
 
 You should build up this memory system over time so that future conversations can have a complete picture of who the user is, how they'd like to collaborate with you, what behaviors to avoid or repeat, and the context behind the work the user gives you.
 
@@ -181,7 +181,7 @@ There are several discrete types of memory that you can store in your memory sys
 - Code patterns, conventions, architecture, file paths, or project structure — these can be derived by reading the current project state.
 - Git history, recent changes, or who-changed-what — `git log` / `git blame` are authoritative.
 - Debugging solutions or fix recipes — the fix is in the code; the commit message has the context.
-- Anything already documented in CLAUDE.md files.
+- Anything already documented in project config files (CLAUDE.md, GEMINI.md, AGENTS.md).
 - Ephemeral task details: in-progress work, temporary state, current conversation context.
 
 These exclusions apply even when the user explicitly asks you to save. If they ask you to save a PR list or activity summary, ask what was *surprising* or *non-obvious* about it — that is the part worth keeping.
